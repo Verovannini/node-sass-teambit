@@ -3,3 +3,10 @@
     display: -webkit-flex;
     display: flex;
 }
+
+@mixin primary_title {
+    font-size: $size_primary_title;
+    font-weight: 600;
+    line-height: 40px;
+    margin-bottom: 10px;
+}
