@@ -15,6 +15,11 @@ body{
     margin: 0 auto;
 }
 
+.container-lg{
+    max-width: 95%;
+    margin: 0 auto;
+}
+
 .padd-section{
     padding: 40px 0;
 }
@@ -67,4 +72,11 @@ h3{
 
 .text-center{
     text-align: center;
+}
+
+@media screen and (max-width: $breakpoint_small) {
+    .container,
+    .container-lg{
+        max-width: 95%;
+    }
 }

@@ -28,7 +28,7 @@
 @media screen and (max-width: $breakpoint_small) {
     .jumbotron-wrapper {
         flex-wrap: wrap;
-        
+
         .jumbo-img,
         .teaser{
             width: 100%;
@@ -47,12 +47,6 @@
 
     .after{
         margin-top: 50px;
-
-        h3{
-            width: 70%;
-            margin-right: auto;
-            margin-left: auto
-        }
     }
 
     .images-container{
@@ -74,3 +68,61 @@
     }
 }
 // End Vantages Section
+
+// Start Features Section
+.features{
+
+    .feature-row{
+        @include display_flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+
+        .feature-image{
+            width: 50%;
+        }
+
+        .feature-info{
+            width: 30%;
+            padding-left: 20px;
+
+            img{
+                margin-top: 20px;
+                width: 90%;
+            }
+        }
+
+        &.right{
+            flex-direction: row-reverse;
+        }
+    }
+
+    p{
+        font-size: $size_medium_text;
+        padding-bottom: 20px;
+    }
+
+    a{
+        font-size: $size_medium_text;
+        text-decoration: none;
+        color: $btn_color;
+    }
+}
+
+@media screen and (max-width: $breakpoint_small) {
+    .features .feature-row{
+
+        .feature-image{
+            width: 100%;
+        }
+        .feature-info{
+            width: 100%;
+            margin-bottom: 30px;
+            
+            img{
+                width: 50%;
+            }
+        }
+    }
+}
+// End Features Section

@@ -14,6 +14,11 @@ body {
   margin: 0 auto;
 }
 
+.container-lg {
+  max-width: 95%;
+  margin: 0 auto;
+}
+
 .padd-section {
   padding: 40px 0;
 }
@@ -63,6 +68,12 @@ h3 {
   text-align: center;
 }
 
+@media screen and (max-width: 700px) {
+  .container,
+.container-lg {
+    max-width: 95%;
+  }
+}
 nav {
   display: flex;
   justify-content: space-between;
@@ -138,11 +149,6 @@ nav .burger-toggle {
 .vantages .after {
   margin-top: 50px;
 }
-.vantages .after h3 {
-  width: 70%;
-  margin-right: auto;
-  margin-left: auto;
-}
 .vantages .images-container {
   display: flex;
   justify-content: space-around;
@@ -156,4 +162,47 @@ nav .burger-toggle {
 }
 .vantages .single-image-container img {
   width: 200px;
+}
+
+.features .feature-row {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+.features .feature-row .feature-image {
+  width: 50%;
+}
+.features .feature-row .feature-info {
+  width: 30%;
+  padding-left: 20px;
+}
+.features .feature-row .feature-info img {
+  margin-top: 20px;
+  width: 90%;
+}
+.features .feature-row.right {
+  flex-direction: row-reverse;
+}
+.features p {
+  font-size: 14px;
+  padding-bottom: 20px;
+}
+.features a {
+  font-size: 14px;
+  text-decoration: none;
+  color: #0414B3;
+}
+
+@media screen and (max-width: 700px) {
+  .features .feature-row .feature-image {
+    width: 100%;
+  }
+  .features .feature-row .feature-info {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .features .feature-row .feature-info img {
+    width: 50%;
+  }
 }
