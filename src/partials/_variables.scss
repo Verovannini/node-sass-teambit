@@ -1,8 +1,9 @@
-$brand_primary_color: #ffe7d2;
+$brand_primary_color: lighten(#3E14E9, 30%);
 $font_color: #58402c;
-$btn_color: #2e4690;
+$btn_color: #0414B3;
 $size_primary_title: 28px;
 $size_secondary_title: 18px;
 $size_text: 16px;
 $size_medium_text: 14px;
-$size_small_text: 12px;
+$size_small_text: 10px;
+$breakpoint_small: 700px;

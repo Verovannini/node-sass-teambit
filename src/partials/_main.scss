@@ -24,6 +24,17 @@
         padding-left: 20px;
     }
 }
+
+@media screen and (max-width: $breakpoint_small) {
+    .jumbotron-wrapper {
+        flex-wrap: wrap;
+        
+        .jumbo-img,
+        .teaser{
+            width: 100%;
+        }
+    }
+}
 // End Jumbotron
 
 // Vantages Section

@@ -36,7 +36,7 @@ button {
 }
 button.btn {
   padding: 5px 10px;
-  background-color: #2e4690;
+  background-color: #0414B3;
   color: #fff;
   border: 0;
   font-size: 14px;
@@ -49,7 +49,7 @@ button img {
 }
 
 .small-text {
-  font-size: 12px;
+  font-size: 10px;
   color: ligthen(#58402c, 10%);
 }
 
@@ -71,7 +71,7 @@ nav {
   border-bottom: 1px solid #58402c;
 }
 nav .logo img {
-  width: auto;
+  width: 120px;
 }
 nav .menu {
   display: flex;
@@ -83,11 +83,22 @@ nav .menu li {
   font-weight: 600;
 }
 nav .menu li .nav-btn {
-  color: #2e4690;
+  color: #0414B3;
   padding: 10px;
-  border: 1px solid #2e4690;
+  border: 1px solid #0414B3;
+}
+nav .burger-toggle {
+  display: none;
 }
 
+@media screen and (max-width: 700px) {
+  nav .menu {
+    display: none;
+  }
+  nav .burger-toggle {
+    display: block;
+  }
+}
 .jumbotron-wrapper {
   display: flex;
 }
@@ -109,8 +120,17 @@ nav .menu li .nav-btn {
   padding-left: 20px;
 }
 
+@media screen and (max-width: 700px) {
+  .jumbotron-wrapper {
+    flex-wrap: wrap;
+  }
+  .jumbotron-wrapper .jumbo-img,
+.jumbotron-wrapper .teaser {
+    width: 100%;
+  }
+}
 .vantages {
-  background-color: #ffe7d2;
+  background-color: #b09ff7;
 }
 .vantages .before {
   border-bottom: 1px solid #58402c;

@@ -6,7 +6,7 @@ nav{
     border-bottom: 1px solid $font_color;
 
     .logo img{
-        width: auto;
+        width: 120px;
     }
 
     .menu{
@@ -23,6 +23,22 @@ nav{
                 padding: 10px;
                 border: 1px solid $btn_color;
             }
+        }
+    }
+
+    .burger-toggle{
+        display: none;
+    }
+}
+
+@media screen and (max-width: $breakpoint_small) {
+    nav{
+        .menu{
+            display: none;
+        }
+
+        .burger-toggle{
+            display: block;
         }
     }
 }
