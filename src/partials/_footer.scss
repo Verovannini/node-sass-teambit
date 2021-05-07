@@ -1,0 +1,32 @@
+footer{
+
+    .container{
+        @include display_flex;
+        justify-content: space-between
+    }
+
+    .footer-logo{
+        @include display_flex;
+        width: 30%;
+        font-size: $size_medium_text;
+        font-weight: 600;
+
+        img{
+            height: 50px;
+            width: auto;
+            margin-right: 10px;
+        }
+    }
+
+    .menu{
+        
+        h4{
+            font-size: $size_medium_text;
+            margin-bottom: 20px;
+        }
+
+        a{
+            font-size: $size_small_text;
+        }
+    }
+}
