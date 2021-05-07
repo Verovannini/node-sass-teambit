@@ -126,3 +126,42 @@
     }
 }
 // End Features Section
+
+// Start Get Started Section
+.get-started{
+    background-color: $brand_primary_color;
+
+    h2{
+        @include primary_title;
+    }
+
+    .box{
+        width: 60%;
+        margin: 30px auto;
+        background-color: #fff;
+        border: 1px solid $font_color;
+        border-radius: 10px;
+        padding: 15px;
+        text-align: initial;
+        font-size: $size_small_text;
+
+        p{
+            padding-bottom: 10px;
+        }
+
+        img{
+            width: 50px;
+            margin-right: 15px;
+        }
+
+        .credit{
+            @include display_flex;
+            align-items: center;
+
+            .name{
+                color: $btn_color;
+            }
+        }
+    }
+}
+// End Get Started Section
